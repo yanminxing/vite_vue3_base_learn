@@ -6,7 +6,7 @@
 
 2 创建vite+vue3+ts项目
 
-```js
+```javascript、
 npm init vite@latest
 ```
 
@@ -85,6 +85,26 @@ yarn dev
 注意：这里将src/view/home/Home.vue作为路由组件的入口。学习vue3语法的时候，可以将组件引入到这里即可。
 
 2 代码目录：src/components/demo/index.vue
+
+## 2.4 定义响应式数据
+
+1 注意
+
+注意：这里将src/view/home/Home.vue作为路由组件的入口。学习vue3语法的时候，可以将组件引入到这里即可。
+
+2 代码目录：src/components/reactiveLearn/ReactiveLearn.vue
+
+3 定义响应式数据有两种方法
+
+1）ref
+
+- ref可以定义原始数据类型和对象类型。需要注意的是，若在js中使用ref定义的数据，需要通过.value属性来访问；在模板中则不需要通过.value属性来访问。
+- 注意：使用ref定义的对象，里面的属性可以通过toRefs解构出来，而且，解构出来的属性与原来对象里面的属性指向同一个响应式数据。即他们相互关联，解构出来的属性是响应式 的。
+
+2）reactive
+
+- 用来定义对象类型的响应式数据。访问的时候，不需要添加.value属性。
+- 注意：使用reactive定义的对象，里面的属性可以通过toRefs解构出来，而且，解构出来的属性与原来对象里面的属性指向同一个响应式数据。即他们相互关联，解构出来的属性是响应式 的。
 
 
 
