@@ -72,7 +72,21 @@ yarn dev
 
 [项目视频链接](https://www.bilibili.com/video/BV1gf4y1W783?p=2&spm_id_from=pageDriver&vd_source=0a0dd058ef849bffba564af91a70780d)
 
+注意：这里将src/view/home/Home.vue作为路由组件的入口。学习vue3语法的时候，可以将组件引入到这里即可。
+
 ## 2.1 创建vite项目
 
 ## 2.2 setup语法
+
+## 2.3 简单的demo（p3）
+
+1 注意
+
+注意：这里将src/view/home/Home.vue作为路由组件的入口。学习vue3语法的时候，可以将组件引入到这里即可。
+
+2 代码目录：src/components/demo/index.vue
+
+
+
+
 
