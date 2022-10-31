@@ -1,0 +1,70 @@
+// 原来的配置
+//{
+//  "compilerOptions": {
+//    "target": "ESNext",
+//    "useDefineForClassFields": true,
+//    "module": "ESNext",
+//    "moduleResolution": "Node",
+//    "strict": true,
+//    "jsx": "preserve",
+//    "sourceMap": true,
+//    "resolveJsonModule": true,
+//    "isolatedModules": true,
+//    "esModuleInterop": true,
+//    "lib": ["ESNext", "DOM"],
+//    "skipLibCheck": true
+//  },
+//  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
+//  "references": [{ "path": "./tsconfig.node.json" }]
+//}
+
+// w的配置
+{
+  "compilerOptions": {
+    "outDir": "./__out",
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowSyntheticDefaultImports": true,
+    "strictFunctionTypes": false,
+    "jsx": "preserve",
+    "baseUrl": ".",
+    "allowJs": true,
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "experimentalDecorators": true,
+    "types": ["vite/client"],
+    "typeRoots": ["./node_modules/@types/", "./types"],
+    "noImplicitAny": false,
+    "skipLibCheck": true,
+    "paths": {
+      "@/*": ["src/*"],
+      "#/*": ["types/*"]
+    },
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable",
+      "scripthost"
+    ]
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "types/**/*.d.ts",
+    "types/**/*.ts",
+    "build/**/*.ts",
+    "build/**/*.d.ts",
+    "mock/**/*.ts",
+    "vite.config.ts"
+  ],
+  "exclude": ["node_modules", "dist", "**/*.js"]
+}
+
