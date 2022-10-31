@@ -104,9 +104,40 @@ yarn dev
 2）reactive
 
 - 用来定义对象类型的响应式数据。访问的时候，不需要添加.value属性。
-- 注意：使用reactive定义的对象，里面的属性可以通过toRefs解构出来，而且，解构出来的属性与原来对象里面的属性指向同一个响应式数据。即他们相互关联，解构出来的属性是响应式 的。
+- 注意：使用reactive定义的对象，里面的属性可以通过toRefs解构出来，而且，解构出来的属性与原来对象里面的属性指向同一个响应式数据。即他们相互关联，解构出来的属性是响应式 的
 
 
+
+## 2.5 templateRefs（p5）
+
+1 注意
+
+注意：这里将src/view/home/Home.vue作为路由组件的入口。学习vue3语法的时候，可以将组件引入到这里即可。
+
+2 代码目录：src/components/templateRefs/TemplateRefs.vue
+
+3 作用，给ref传递一个null参数，定义的变量，可以直接作为模板里面通过ref绑定元素。
+
+```vue
+<!--vue3中响应式数据学习-->
+<template>
+	<div ref="dom_id">1111</div>
+</template>
+<script setup lang="ts">
+import {ref,onMounted} from 'vue';
+
+// 获取真实的dom元素,需要注意的是，需要将ref里面的参数设置为null
+const dom_id = ref(null);
+onMounted(() => {
+	console.log(dom_id.value);
+})
+</script>
+<style lang="scss" scoped>
+.button-con {
+	color: red;
+}
+</style>
+```
 
 
 
