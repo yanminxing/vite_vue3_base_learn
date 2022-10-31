@@ -73,3 +73,6 @@ yarn dev
 [项目视频链接](https://www.bilibili.com/video/BV1gf4y1W783?p=2&spm_id_from=pageDriver&vd_source=0a0dd058ef849bffba564af91a70780d)
 
 ## 2.1 创建vite项目
+
+## 2.2 setup语法
+
