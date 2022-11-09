@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div class="card">
+  <span>+++++</span>
+</div>
+<script>
+  class DocumentDemo {
+		constructor() {
+			this.add = document.querySelector('.card');
+			this.init();
+		}
+
+	  init () {
+			this.add.onclick = this.addOne;
+    }
+
+	  addOne() {
+		  console.log(1111666);
+    }
+  }
+	const doc = new DocumentDemo();
+</script>
+</body>
+</html>

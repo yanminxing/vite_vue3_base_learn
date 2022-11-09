@@ -141,3 +141,11 @@ onMounted(() => {
 
 
 
+## 2.6 computed(p6)
+
+1 若computed参数只有get的回调，则computed的值是一个readonly，即只读的值，不能通过赋值的方式修改其值。
+
+2 computed的值还可以是一个对象，该对象里面有set和get函数，分别为赋值和取值时候触发。这个时候，computed的值定义之后，还可以对其赋值，即其中的值可以修改。
+
+
+
