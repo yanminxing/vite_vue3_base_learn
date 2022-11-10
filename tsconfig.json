@@ -40,8 +40,14 @@
     "experimentalDecorators": true,
     "types": ["vite/client"],
     "typeRoots": ["./node_modules/@types/", "./types"],
-    "noImplicitAny": false,
+    //  不随便使用any
+    "noImplicitAny": true,
+    //  不随便使用this
+    "noImplicitThis": true,
+    //  不随便使用null
+    "strictNullChecks": true,
     "skipLibCheck": true,
+    // 配置@符号，以防报错
     "paths": {
       "@/*": ["src/*"],
       "#/*": ["types/*"]
