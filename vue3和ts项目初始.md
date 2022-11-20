@@ -58,6 +58,15 @@ npm install sass --save -dev
 npm install style-loader  --save-dev
 ```
 
+10 下载和配置vant
+
+```
+yarn add vant
+npm i vite-plugin-style-import@1.4.1 -D 
+```
+
+
+
 ## 2 运行項目
 
 ```
